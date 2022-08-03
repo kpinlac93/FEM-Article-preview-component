@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+}
+body {
+    background-color: #F2F2F2;
+}
+
+.card {
+    height: 280px;
+    width: 730px;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.082);
+}
+.card .picture {
+    background-image: url("images/drawers.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px 0px 0px 10px;
+}
+.card .text {
+    width: 100%;
+}
+.card .blank {
+    height: 280px;
+    width: 65px;
+    position: absolute;
+    background-color: white;
+    z-index: 5;
+    margin: auto;
+    left: 40%;
+    right: 60%;
+}
+.text h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 1.4em;
+    margin: 25px 25px 15px;
+    margin-left: 0;
+}
+.text p {
+    font-size: 0.85em;
+    line-height: 1.4em;
+    margin: 0px 25px 0px;
+    margin-left: 0;
+}
+
+
+
+.card .profile {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.profile .author {
+    display: flex;
+}
+.profile .avatar {
+    background-image: url("images/avatar-michelle.jpg");
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.author .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.author .info h3 {
+    font-weight: bold;
+    font-size: 0.77em;
+    letter-spacing: 0.5px;
+}
+.author .info p {
+    font-weight: 200;
+    font-size: 0.77em;
+    letter-spacing: 0.5px;
+}
+.profile .share {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    justify-self: end;
+    margin-right: 30px;
+}
+.share .img {
+    background-image: url("images/icon-share.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+
+
+@media (max-width: 740px) {
+    .card {
+        flex-direction: column;
+        width: 327px;
+        display: block;
+        height: 532px;
+    }
+    .card .blank {
+        /* visibility: hidden; */
+        width: 327px;
+        height: 35px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 43%;
+    }
+    .card .picture {
+        background-image: url("images/drawers.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 263px;
+        width: 327px;
+        position: relative;
+        z-index: 1;
+        border-radius: 0;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .text h1 {
+        margin: 0 30px 20px;
+        font-size: 1em;
+        line-height: 1.5em;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+    .text p {
+        margin: 0 30px 0px;
+        line-height: 1.5em;
+    }
+    .info p {
+        margin: 0;
+    }
+    .profile .share {
+        margin-right: 30px;
+    }
+    .profile .author {
+        margin-left: 30px;
+    }
+}
